@@ -217,7 +217,7 @@ workRow.className = 'work__row'
 workRow.setAttribute('style','display:flex;justify-content:space-between; flex-wrap: wrap; padding:0 0 70px;border-bottom:1px solid rgba(0, 0, 0, 0.3);')
 
 
-for(let i = 0; i < 3; i++){
+for(let i = 0; i < 6; i++){
     const workCol = col4.cloneNode()
     const image = img.cloneNode();
     const title = h3.cloneNode();
