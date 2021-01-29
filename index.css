@@ -1,0 +1,11 @@
+.work::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    height: 60vh;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+    

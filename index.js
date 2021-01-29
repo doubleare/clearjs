@@ -201,7 +201,7 @@ document.body.append(standart)
 // work
 
 work.className = 'work';
-work.setAttribute('style','padding-top:100px ;background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4; height: 50vh ;position:statick')
+work.setAttribute('style','padding-top:100px ; position:relative')
 
 const workTop = div.cloneNode()
 workTop.setAttribute('style','display: flex; justify-content: space-between; align-items:center;margin: 0 0 20px')
@@ -216,12 +216,8 @@ const workRow = row.cloneNode()
 workRow.className = 'work__row'
 workRow.setAttribute('style','display:flex;justify-content:space-between; flex-wrap: wrap; padding:0 0 70px;border-bottom:1px solid rgba(0, 0, 0, 0.3);')
 
-let count = 3  
-for(let i = 0; i < count; i++){
-    if(count > 12){
-        alert('Больше нельзя')
-        count = 12;
-    }
+
+for(let i = 0; i < 3; i++){
     const workCol = col4.cloneNode()
     const image = img.cloneNode();
     const title = h3.cloneNode();
@@ -256,22 +252,7 @@ const projectP = p.cloneNode()
 const projectLink = a.cloneNode()
 const projectRow = row.cloneNode()
 
-let procent 
-
-if(count <= 3){
-    procent = 3*10;
-} else if(count <= 6) {
-    procent = 3*22;
-}else if(count <= 9) {
-    procent = 3*35;
-}else if(count <= 12) {
-    procent = 3*47;
-}else {
-    procent = 3*47;
-}
-
-project.setAttribute('style','padding:100px 0;background: #F6F6F8;')
-project.style.marginTop = procent+'%';
+project.setAttribute('style','padding:100px 0;background: #F6F6F8;margin-top:85px;')
 projectCont.setAttribute('style',' max-width: 1100px; margin: 0 auto;text-align:center;')
 projectRow.setAttribute('style','display:flex;justify-content:space-between;flex-wrap:wrap;margin-bottom:50px;')
 projectTitle.innerHTML = 'Наши проекты'
